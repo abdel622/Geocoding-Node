@@ -1,0 +1,108 @@
+:root{
+  --mulled-wine-color: #564F6F;
+  --mischka-color: #D1D7E0;
+  --steel-gray-color:#2D283E;
+  --gun-powder-color:#4C495D;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  height: 100vh;
+  padding: 50px;
+  background-color: #eee;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.main-section{
+  margin-top: 10vh;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#test{
+  color:pink
+}
+
+.btn-custom-color-primary{
+  color: var(--mischka-color) !important;
+  background-color: var(--mulled-wine-color) !important;
+  font-weight: bold;
+}
+
+.btn-custom-color-primary:hover{
+  background-color: var(--gun-powder-color) !important;
+}
+
+.btn-huge{
+  padding:10px 30px !important;
+}
+
+.main-heading{
+  font-family: 'Oswald', sans-serif;
+  color: var(--steel-gray-color);
+  font-size: 2.5rem;
+}
+
+.thead-custom-dark{
+  color: var(--mischka-color) !important;
+  background-color: var(--gun-powder-color) !important;
+}
+
+.thead-custom-light{
+  color: white !important;
+  background-color: #9a8ec7 !important;
+}
+
+.input-address{
+  border-radius: 25px;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing:0.5px;
+  color: #2D283E;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.by-auth{
+  display: flex;
+  width: 100px;
+  height: 30px;
+  background-color: #564F6F;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  /* border-top: 2px dotted #2D283E; */
+  /* border-left: 2px dotted #2D283E; */
+  /* border-radius: 3px 0; */
+  box-shadow: -2px 2px 2px #5c5c5c63, -2px -2px 5px #5c5c5c ;
+  border-bottom-left-radius: 10px;
+}
+
+.by-auth span{
+  font-weight:700;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+
+}
+
+
+@media screen and (max-width:468px){
+  .main-heading{
+    font-size: 2rem;
+  }
+
+  .btn-huge{
+    padding:5px 20px !important;
+  }
+}
